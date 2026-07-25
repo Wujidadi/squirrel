@@ -52,9 +52,13 @@
 		77AA68172588916F00A592E2 /* HKVariantsRevPhrases.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E92588916300A592E2 /* HKVariantsRevPhrases.ocd2 */; };
 		77AA68182588916F00A592E2 /* jp2t.json in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67EE2588916300A592E2 /* jp2t.json */; };
 		77AA68192588916F00A592E2 /* JPShinjitaiCharacters.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E52588916300A592E2 /* JPShinjitaiCharacters.ocd2 */; };
+		1664FB9FD7D238DDC7619E9B /* TWVariantsPhrases.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 166E5FCCAB8859FA93A66696 /* TWVariantsPhrases.ocd2 */; };
+		D3C7725CB845A0DE3B73DFA0 /* TSCharactersExt.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 0B6928F6E7B271662370C75E /* TSCharactersExt.ocd2 */; };
+		85C0D40AB54256C6B2E055F5 /* STPhrases_GeneratedFromRegionalPhrases.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 76DD62264B224A3A73D9440E /* STPhrases_GeneratedFromRegionalPhrases.ocd2 */; };
+		1C01BF262BC8910AAFC4DB0D /* JPShinjitaiCharactersRev.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 01C8C685B796612E8925CF44 /* JPShinjitaiCharactersRev.ocd2 */; };
+		85F114E2649C31F42B5B3256 /* HKVariantsPhrases.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = D55E937B397A1CC3BA4C3EDC /* HKVariantsPhrases.ocd2 */; };
+		81A7EB20BE69C3A3B1B48314 /* CJK_Compatibility_Ideographs.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = B501C7367A6A897AE70675C5 /* CJK_Compatibility_Ideographs.ocd2 */; };
 		77AA681A2588916F00A592E2 /* JPShinjitaiPhrases.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E12588916300A592E2 /* JPShinjitaiPhrases.ocd2 */; };
-		77AA681B2588916F00A592E2 /* JPVariants.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E62588916300A592E2 /* JPVariants.ocd2 */; };
-		77AA681C2588916F00A592E2 /* JPVariantsRev.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E42588916300A592E2 /* JPVariantsRev.ocd2 */; };
 		77AA681D2588916F00A592E2 /* s2hk.json in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67F02588916300A592E2 /* s2hk.json */; };
 		77AA681E2588916F00A592E2 /* s2t.json in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67ED2588916300A592E2 /* s2t.json */; };
 		77AA681F2588916F00A592E2 /* s2tw.json in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67F52588916400A592E2 /* s2tw.json */; };
@@ -129,9 +133,13 @@
 				77AA68172588916F00A592E2 /* HKVariantsRevPhrases.ocd2 in Copy opencc Files */,
 				77AA68182588916F00A592E2 /* jp2t.json in Copy opencc Files */,
 				77AA68192588916F00A592E2 /* JPShinjitaiCharacters.ocd2 in Copy opencc Files */,
+				1664FB9FD7D238DDC7619E9B /* TWVariantsPhrases.ocd2 in Copy opencc Files */,
+				D3C7725CB845A0DE3B73DFA0 /* TSCharactersExt.ocd2 in Copy opencc Files */,
+				85C0D40AB54256C6B2E055F5 /* STPhrases_GeneratedFromRegionalPhrases.ocd2 in Copy opencc Files */,
+				1C01BF262BC8910AAFC4DB0D /* JPShinjitaiCharactersRev.ocd2 in Copy opencc Files */,
+				85F114E2649C31F42B5B3256 /* HKVariantsPhrases.ocd2 in Copy opencc Files */,
+				81A7EB20BE69C3A3B1B48314 /* CJK_Compatibility_Ideographs.ocd2 in Copy opencc Files */,
 				77AA681A2588916F00A592E2 /* JPShinjitaiPhrases.ocd2 in Copy opencc Files */,
-				77AA681B2588916F00A592E2 /* JPVariants.ocd2 in Copy opencc Files */,
-				77AA681C2588916F00A592E2 /* JPVariantsRev.ocd2 in Copy opencc Files */,
 				77AA681D2588916F00A592E2 /* s2hk.json in Copy opencc Files */,
 				77AA681E2588916F00A592E2 /* s2t.json in Copy opencc Files */,
 				77AA681F2588916F00A592E2 /* s2tw.json in Copy opencc Files */,
@@ -256,6 +264,12 @@
 		447765C725C30E6B002415AF /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		448363D925BDBBBF0022C7BA /* pinyin.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = pinyin.yaml; path = data/plum/pinyin.yaml; sourceTree = "<group>"; };
 		448363DA25BDBBBF0022C7BA /* zhuyin.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = zhuyin.yaml; path = data/plum/zhuyin.yaml; sourceTree = "<group>"; };
+		B150EA61A8F2334C7053D082 /* quick5.supplement.dict.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = "quick5.supplement.dict.yaml"; path = "data/plum/quick5.supplement.dict.yaml"; sourceTree = "<group>"; };
+		7F09B8D3B08F0BE71AC3CFBB /* quick5.schema.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = "quick5.schema.yaml"; path = "data/plum/quick5.schema.yaml"; sourceTree = "<group>"; };
+		8A6002D82F29C56883DD606A /* quick5.dict.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = "quick5.dict.yaml"; path = "data/plum/quick5.dict.yaml"; sourceTree = "<group>"; };
+		4639481E7541071A4259FDE6 /* grammar.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = "grammar.yaml"; path = "data/plum/grammar.yaml"; sourceTree = "<group>"; };
+		B93B1B771BA746E5EF3B229F /* zh-hant-t-essay-bgw.gram */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-hant-t-essay-bgw.gram"; path = "data/plum/zh-hant-t-essay-bgw.gram"; sourceTree = "<group>"; };
+		7DE20C60B65C3F0D24E29547 /* zh-hant-t-essay-bgc.gram */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-hant-t-essay-bgc.gram"; path = "data/plum/zh-hant-t-essay-bgc.gram"; sourceTree = "<group>"; };
 		44986A93184B421700B3278D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		44986A94184B421700B3278D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		44AEBC7121F569CF00344375 /* punctuation.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = punctuation.yaml; path = data/plum/punctuation.yaml; sourceTree = "<group>"; };
@@ -272,9 +286,13 @@
 		77AA67E12588916300A592E2 /* JPShinjitaiPhrases.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JPShinjitaiPhrases.ocd2; sourceTree = "<group>"; };
 		77AA67E22588916300A592E2 /* hk2s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hk2s.json; sourceTree = "<group>"; };
 		77AA67E32588916300A592E2 /* TSCharacters.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSCharacters.ocd2; sourceTree = "<group>"; };
-		77AA67E42588916300A592E2 /* JPVariantsRev.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JPVariantsRev.ocd2; sourceTree = "<group>"; };
 		77AA67E52588916300A592E2 /* JPShinjitaiCharacters.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JPShinjitaiCharacters.ocd2; sourceTree = "<group>"; };
-		77AA67E62588916300A592E2 /* JPVariants.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JPVariants.ocd2; sourceTree = "<group>"; };
+		166E5FCCAB8859FA93A66696 /* TWVariantsPhrases.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TWVariantsPhrases.ocd2; sourceTree = "<group>"; };
+		0B6928F6E7B271662370C75E /* TSCharactersExt.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSCharactersExt.ocd2; sourceTree = "<group>"; };
+		76DD62264B224A3A73D9440E /* STPhrases_GeneratedFromRegionalPhrases.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = STPhrases_GeneratedFromRegionalPhrases.ocd2; sourceTree = "<group>"; };
+		01C8C685B796612E8925CF44 /* JPShinjitaiCharactersRev.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JPShinjitaiCharactersRev.ocd2; sourceTree = "<group>"; };
+		D55E937B397A1CC3BA4C3EDC /* HKVariantsPhrases.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKVariantsPhrases.ocd2; sourceTree = "<group>"; };
+		B501C7367A6A897AE70675C5 /* CJK_Compatibility_Ideographs.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CJK_Compatibility_Ideographs.ocd2; sourceTree = "<group>"; };
 		77AA67E72588916300A592E2 /* TWPhrases.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TWPhrases.ocd2; sourceTree = "<group>"; };
 		77AA67E82588916300A592E2 /* t2hk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2hk.json; sourceTree = "<group>"; };
 		77AA67E92588916300A592E2 /* HKVariantsRevPhrases.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKVariantsRevPhrases.ocd2; sourceTree = "<group>"; };
@@ -442,9 +460,13 @@
 				77AA67E92588916300A592E2 /* HKVariantsRevPhrases.ocd2 */,
 				77AA67EE2588916300A592E2 /* jp2t.json */,
 				77AA67E52588916300A592E2 /* JPShinjitaiCharacters.ocd2 */,
+				166E5FCCAB8859FA93A66696 /* TWVariantsPhrases.ocd2 */,
+				0B6928F6E7B271662370C75E /* TSCharactersExt.ocd2 */,
+				76DD62264B224A3A73D9440E /* STPhrases_GeneratedFromRegionalPhrases.ocd2 */,
+				01C8C685B796612E8925CF44 /* JPShinjitaiCharactersRev.ocd2 */,
+				D55E937B397A1CC3BA4C3EDC /* HKVariantsPhrases.ocd2 */,
+				B501C7367A6A897AE70675C5 /* CJK_Compatibility_Ideographs.ocd2 */,
 				77AA67E12588916300A592E2 /* JPShinjitaiPhrases.ocd2 */,
-				77AA67E62588916300A592E2 /* JPVariants.ocd2 */,
-				77AA67E42588916300A592E2 /* JPVariantsRev.ocd2 */,
 				77AA67F02588916300A592E2 /* s2hk.json */,
 				77AA67ED2588916300A592E2 /* s2t.json */,
 				77AA67F52588916400A592E2 /* s2tw.json */,
