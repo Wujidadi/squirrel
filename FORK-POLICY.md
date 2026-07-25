@@ -21,5 +21,9 @@
 
 ## 版號慣例
 
-- 自建版版號＝官方版號前綴 `w`（wujidadi 首字母），再加第四段自建流水號，如 `w1.1.2.1`。
-- 版號定義於 `Squirrel.xcodeproj/project.pbxproj` 的 `CURRENT_PROJECT_VERSION`（Debug 與 Release 各一處）。
+- 自建版版號採 SemVer 2.0.0 相容格式：`<官方當前正式版>-wujidadi[.流水號]`。
+  第零版用裸後綴（如 `1.1.2-wujidadi`），同一官方基底上的後續改版依序為 `.1`、`.2`…；
+  官方發布新正式版並跟上後，核心版號隨之更換、流水號歸零（回到裸後綴）。
+- 核心版號必須等於官方「當前」正式版：Sparkle 比較器遇連字號即截斷後綴，
+  如此「檢查新版本」不會提示降級到官方同版，官方任何新版皆正常跳出提示。
+- 版號定義於 `Squirrel.xcodeproj/project.pbxproj` 的 `CURRENT_PROJECT_VERSION`（Debug 與 Release 各一處，含連字號需加引號）。
