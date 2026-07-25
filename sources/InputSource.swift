@@ -40,10 +40,10 @@ final class SquirrelInstaller {
   }
 
   func register() {
+    // 即使已註冊仍重新註冊：bundle 更換後需藉此強制 TIS 重新整理來源紀錄
     let enabledInputModes = enabledModes()
     if !enabledInputModes.isEmpty {
-      print("User already registered Squirrel method(s): \(enabledInputModes.map { $0.rawValue })")
-      return
+      print("Re-registering; already enabled Squirrel method(s): \(enabledInputModes.map { $0.rawValue })")
     }
     TISRegisterInputSource(SquirrelApp.appDir as CFURL)
     print("Registered input source from \(SquirrelApp.appDir)")
