@@ -3,6 +3,14 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.2 — 2026-07-27
+
+### 修正
+
+- 修正 CLI 散布通知不送達的問題：`--reload`、`--sync`、`--ascii`、`--nascii`、`--getascii` 五處發送改用 `deliverImmediately: true`。
+  鼠鬚管是背景 App，AppKit 對非作用中 App 暫停散布通知投遞，原本預設發送方式會被佇列或丟棄，
+  致 CLI 指令靜默無效（選單同名功能因行程內直呼不受影響）、偶爾在鼠鬚管短暫活躍時遲到補送（b10692d）
+
 ## 1.1.2-wujidadi.1 — 2026-07-26
 
 ### 基礎設施
