@@ -3,6 +3,12 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.1 — 2026-07-26
+
+### 基礎設施
+
+- librime 子模組更新至含 fork 版號標記的版本（`1.17.0-wujidadi`）：`installation.yaml` 與 userdb 中繼資料自此可直接分辨機器上跑的是官方或 fork 的 librime
+
 ## 1.1.2-wujidadi — 2026-07-25
 
 基於上游 master 2158538（官方 1.1.2 之後的開發版）。首個自建版。

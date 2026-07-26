@@ -22,7 +22,7 @@
 ## 變更紀錄
 
 - 本 fork 相對上游的變動，一律記錄於 `FORK-CHANGELOG.md`（依自建版版號分節）；上游自身的變更維持在 `CHANGELOG.md`，兩者不混寫。
-- librime 等其他 fork 倉庫比照辦理（librime 無自建版號，依日期分節）。
+- librime 等其他 fork 倉庫比照辦理，同樣依 fork 版號分節（librime 現為 `1.17.0-wujidadi`，慣例與本倉庫相同：核心＝上游當前正式版）。
 
 ## 版號慣例
 
