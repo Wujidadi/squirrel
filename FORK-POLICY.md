@@ -9,6 +9,7 @@
 
 - 本倉庫的 master 分支**永不直接合併回上游**。
 - 當上游 master 有更新，或其他分支有值得吸收的變化時，本地 master 可合併它們（方向永遠是「上游→本地」）。
+- 吸收上游一律用 merge，**禁止 rebase**：rebase 會改寫 fork commit 的 hash，使 squirrel 歷代子模組 pin 與 FORK-CHANGELOG 標注的 hash 懸空，force push 後從遠端 clone 的舊版本將無法還原子模組。
 - 發現上游主專案有 bug 應修，或本地開發遇到值得貢獻回去的東西，一律從 `upstream/master` 開獨立分支，以 cherry-pick 擷取或獨立重寫的方式製作變更，再向上游提 PR；不可拿本地 master 或混有本地客製內容的分支直接開 PR。
 
 ## 語言規範
