@@ -3,6 +3,18 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.3 — 2026-08-09
+
+### 行為變更
+
+- 新增離線維護旗標：`~/Library/Rime/.maintenance-hold` 存在且未逾 10 分鐘時，無參數啟動（輸入法常駐模式）的實例立即退場，CLI 動詞不受約束。
+  供 dotfiles 的 `rime-hold-quit` 於離線重建 userdb 期間阻止 TIS 隨需重啟的實例與 `rime_dict_manager` 競逐同一 LevelDB（此競態 2026-08-08 實測會造成 `CURRENT` 指向已刪 MANIFEST 的損壞）；
+  macOS 26 對終端行程的 TISDisableInputSource 靜默失效，無法以停用輸入來源阻擋，故以旗標為之，逾時自動失效避免旗標意外殘留時輸入法永久無法啟動（64c009a）
+
+### 基礎設施
+
+- 合併上游 master 至 1dde022（94dc740）：上游變更含本 fork 先前貢獻回上游的標示文字直接上屏支援與狀態列圖標隱藏修正等，均屬上游內容、不另記於本檔
+
 ## 1.1.2-wujidadi.2 — 2026-07-27
 
 ### 修正
