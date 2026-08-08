@@ -22,6 +22,19 @@ struct SquirrelApp {
 
   // swiftlint:disable:next cyclomatic_complexity
   static func main() {
+    // 離線維護旗標（dotfiles 的 rime-hold-quit 於離線重建 userdb 期間放置）：
+    // 輸入法是 TIS 隨需啟動的行程，--quit 後只要仍是已啟用的輸入來源就會被立即重新拉起，
+    // 與 rime_dict_manager 競逐同一 LevelDB；macOS 26 對終端行程的 TISDisableInputSource
+    // 靜默失效，無法以停用輸入來源阻其重啟，見旗標即退場是唯一可靠的阻擋。
+    // 僅無參數（輸入法常駐模式）受旗標約束，CLI 動詞不受影響；
+    // 旗標逾 10 分鐘視為腳本意外殘留，自動失效以免輸入法永久無法啟動
+    if CommandLine.arguments.count <= 1 {
+      let holdFlag = userDir.appending(component: ".maintenance-hold")
+      if let mtime = try? holdFlag.resourceValues(forKeys: [.contentModificationDateKey]).contentModificationDate,
+         Date.now.timeIntervalSince(mtime) < 600 {
+        return
+      }
+    }
     let rimeAPI: RimeApi_stdbool = rime_get_api_stdbool().pointee
 
     let handled = autoreleasepool {
