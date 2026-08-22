@@ -3,6 +3,12 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.4 — 2026-08-22
+
+### 基礎設施
+
+- 合併上游 master 至 0cd71a6（5400420）：上游變更含本 fork 先前貢獻回上游的 `SquirrelApp.appDir` 路徑修正（PR #1161）與標示區字型自訂（`preedit_font_face`／`preedit_font_point`），均屬上游內容、不另記於本檔
+
 ## 1.1.2-wujidadi.3 — 2026-08-09
 
 ### 行為變更
