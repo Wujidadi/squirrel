@@ -3,6 +3,15 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.5 — 2026-08-25
+
+### 基礎設施
+
+- librime 子模組自 4817d294 更新至 c7d525ed（fork 於 2026-08-25 合併上游 417db238 的版本）並重新編譯：
+  上游帶進 prism 查詢效能改進（1d0df6e4）、CandidatePreview API（本前端未採用），
+  以及 dee 極小值丟棄門檻（de21e7d4）與其誤丟 custom_phrase 無權重詞條回歸的修正（8dc90354）；
+  pin 直接跳過含回歸、無修正的 3b3bb360～9b46caec 區間
+
 ## 1.1.2-wujidadi.4 — 2026-08-22
 
 ### 基礎設施
