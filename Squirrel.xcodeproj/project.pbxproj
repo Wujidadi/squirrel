@@ -49,6 +49,8 @@
 		77AA68142588916F00A592E2 /* hk2s.json in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E22588916300A592E2 /* hk2s.json */; };
 		77AA68152588916F00A592E2 /* HKVariants.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67DC2588916300A592E2 /* HKVariants.ocd2 */; };
 		77AA68162588916F00A592E2 /* HKVariantsRev.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E02588916300A592E2 /* HKVariantsRev.ocd2 */; };
+		2E5F4A93D23116FAB1E94F7B /* HKPhrases.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 07C4004C94AC9EEEBB7BD52C /* HKPhrases.ocd2 */; };
+		26344DF87E8DC0A0CB9B0286 /* HKPhrasesRev.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = E784B42B0AA7F65B76A040C5 /* HKPhrasesRev.ocd2 */; };
 		77AA68172588916F00A592E2 /* HKVariantsRevPhrases.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E92588916300A592E2 /* HKVariantsRevPhrases.ocd2 */; };
 		77AA68182588916F00A592E2 /* jp2t.json in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67EE2588916300A592E2 /* jp2t.json */; };
 		77AA68192588916F00A592E2 /* JPShinjitaiCharacters.ocd2 in Copy opencc Files */ = {isa = PBXBuildFile; fileRef = 77AA67E52588916300A592E2 /* JPShinjitaiCharacters.ocd2 */; };
@@ -130,6 +132,8 @@
 				77AA68142588916F00A592E2 /* hk2s.json in Copy opencc Files */,
 				77AA68152588916F00A592E2 /* HKVariants.ocd2 in Copy opencc Files */,
 				77AA68162588916F00A592E2 /* HKVariantsRev.ocd2 in Copy opencc Files */,
+				2E5F4A93D23116FAB1E94F7B /* HKPhrases.ocd2 in Copy opencc Files */,
+				26344DF87E8DC0A0CB9B0286 /* HKPhrasesRev.ocd2 in Copy opencc Files */,
 				77AA68172588916F00A592E2 /* HKVariantsRevPhrases.ocd2 in Copy opencc Files */,
 				77AA68182588916F00A592E2 /* jp2t.json in Copy opencc Files */,
 				77AA68192588916F00A592E2 /* JPShinjitaiCharacters.ocd2 in Copy opencc Files */,
@@ -283,6 +287,8 @@
 		77AA67DE2588916300A592E2 /* t2tw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2tw.json; sourceTree = "<group>"; };
 		77AA67DF2588916300A592E2 /* tw2s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tw2s.json; sourceTree = "<group>"; };
 		77AA67E02588916300A592E2 /* HKVariantsRev.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKVariantsRev.ocd2; sourceTree = "<group>"; };
+		07C4004C94AC9EEEBB7BD52C /* HKPhrases.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKPhrases.ocd2; sourceTree = "<group>"; };
+		E784B42B0AA7F65B76A040C5 /* HKPhrasesRev.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKPhrasesRev.ocd2; sourceTree = "<group>"; };
 		77AA67E12588916300A592E2 /* JPShinjitaiPhrases.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = JPShinjitaiPhrases.ocd2; sourceTree = "<group>"; };
 		77AA67E22588916300A592E2 /* hk2s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hk2s.json; sourceTree = "<group>"; };
 		77AA67E32588916300A592E2 /* TSCharacters.ocd2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSCharacters.ocd2; sourceTree = "<group>"; };
@@ -457,6 +463,8 @@
 				77AA67E22588916300A592E2 /* hk2s.json */,
 				77AA67DC2588916300A592E2 /* HKVariants.ocd2 */,
 				77AA67E02588916300A592E2 /* HKVariantsRev.ocd2 */,
+				07C4004C94AC9EEEBB7BD52C /* HKPhrases.ocd2 */,
+				E784B42B0AA7F65B76A040C5 /* HKPhrasesRev.ocd2 */,
 				77AA67E92588916300A592E2 /* HKVariantsRevPhrases.ocd2 */,
 				77AA67EE2588916300A592E2 /* jp2t.json */,
 				77AA67E52588916300A592E2 /* JPShinjitaiCharacters.ocd2 */,
@@ -666,7 +674,7 @@
 				CODE_SIGN_ENTITLEMENTS = resources/Squirrel.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = "1.1.2-wujidadi.5";
+				CURRENT_PROJECT_VERSION = "1.1.2-wujidadi.6";
 				DEAD_CODE_STRIPPING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -722,7 +730,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = resources/Squirrel.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = "1.1.2-wujidadi.5";
+				CURRENT_PROJECT_VERSION = "1.1.2-wujidadi.6";
 				DEAD_CODE_STRIPPING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

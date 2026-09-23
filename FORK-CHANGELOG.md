@@ -3,6 +3,16 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.6 — 2026-09-23
+
+### 基礎設施
+
+- librime 子模組自 c7d525ed 更新至 37e47f86（fork `1.17.0-wujidadi.1`，基於上游 ef1a16aa）並重新編譯：
+  fork 將上游 de21e7d4 的 userdb 詞條老化丟棄常量門檻 `1e-200` 改為設定項 `<ns>/user_dict_forget_threshold`，預設 `0` 不遺忘、設 `1e-200` 即恢復上游行為，
+  避免整批 t 同值的詞條跨過門檻時一次全部失效（2026-09-22 terra_pinyin userdb 實測 839,655 條退回字典碼位序）；
+  另帶進上游 ef1a16aa 之前的更新（含 opencc 子模組升至 ver.1.4.2、chording 相關機制），均屬上游內容、不另記於本檔
+- `project.pbxproj` 的「Copy opencc Files」清單補入 OpenCC 1.4.2 新增的 `HKPhrases.ocd2`／`HKPhrasesRev.ocd2`（`hk2sp`／`s2hkp` 系列設定所引用），否則 Xcode 靜默不打包
+
 ## 1.1.2-wujidadi.5 — 2026-08-25
 
 ### 基礎設施
