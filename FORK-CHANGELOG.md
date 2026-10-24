@@ -3,6 +3,15 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.7 — 2026-10-24
+
+### 基礎設施
+
+- 合併上游 master 至 4a9fa27 之前的更新（含 CI 改以 Homebrew core 安裝 Periphery、建置說明對齊 CI 的 Xcode、分頁命中測試路徑修正），均屬上游內容、不另記於本檔
+- librime 子模組自 64894885 更新至 e8990f73（fork `1.17.0-wujidadi.2`，基於上游 1b3417d2）並重新編譯：
+  上游帶進 boost 1.92.0、C++20 支援、依執行期條件啟用元件與 `streaming_chord` 修正；
+  fork 將 macOS 預設部署目標改為 13.0，與本專案一致
+
 ## 1.1.2-wujidadi.6 — 2026-09-23
 
 ### 基礎設施
