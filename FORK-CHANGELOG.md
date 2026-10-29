@@ -3,6 +3,20 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.8 — 2026-10-29
+
+### 行為變更
+
+- librime 子模組自 e8990f73 更新至 028dd582（fork `1.17.0-wujidadi.3`，基於上游 56737cd2）並重新編譯，輸入中的 Shift 切換與 Enter 上屏行為改變，細節見 librime 的 `FORK-CHANGELOG.md`：
+  - 左右 Shift 切換臨時西文一律不上屏，已修改的西文留在編輯區成為已確認段
+  - 臨時西文下按 Return／空白上屏編輯區的組字結果，右 Shift 確認的中文不再退回輸入碼
+  - 數字鍵盤 Enter 比照主鍵盤 Return
+- 數字鍵盤 Enter 的鍵碼對應（`kVK_ANSI_KeypadEnter` → `XK_KP_Enter`）維持不動，統一由 librime 編輯器處理，與小狼毫共用同一份邏輯
+
+### 基礎設施
+
+- librime 上游帶進 leveldb（升至 bb74ef73）、yaml-cpp 0.9.0 與 googletest v1.18.0，相依套件隨之重新編譯；既有 userdb 免轉換即可沿用
+
 ## 1.1.2-wujidadi.7 — 2026-10-24
 
 ### 基礎設施
