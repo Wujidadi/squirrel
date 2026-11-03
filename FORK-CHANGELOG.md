@@ -3,6 +3,13 @@
 本檔記錄本 fork（Wujidadi/squirrel）相對上游 rime/squirrel 的所有變動，依自建版版號分節。
 上游自身的變更見 `CHANGELOG.md`；分支與版號規範見 `FORK-POLICY.md`。
 
+## 1.1.2-wujidadi.9 — 2026-11-03
+
+### 基礎設施
+
+- 合併上游 master 至 d220b92（#1197：候選列的 `noBreak` 改加在字元邊界，不再落在 UTF-16 編碼單元邊界），屬上游內容、不另記於本檔
+- librime 子模組維持 028dd582（fork `1.17.0-wujidadi.3`，基於上游 56737cd2，與上游 master 同步），不重新編譯
+
 ## 1.1.2-wujidadi.8 — 2026-10-29
 
 ### 行為變更
